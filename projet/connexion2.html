@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Eventpass</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+	 	<div class="container">                    
+            <header>  
+                <a class="navbar-brand" href="/">Eventpass</a> 
+                <div class="dropdown">
+                	<ul>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                
+                                <ul class="dropdown-menu">
+                                    <li>Connexion</a></li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </div> 
+
+                    <h2 class="text-center">Identifiez-vous</h2>
+                <div class="well">
+                    <form class="form-signin form-horizontal" role="form" action=" connexion.php" method="post">
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                            <input type="text" name="_username" value="" class="form-control" placeholder="Email" required autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <input type="password" name="_password" class="form-control" placeholder="Mot de passe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <a href="connexion.php "><input type="submit" value = "Connexion"></a>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Pas encore inscrit ? <a href="testbootstrap.html">Cliquez ici</a>.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="mastfoot">
+          <div class="inner">                       
+              <p>&copy; Eventpass.com - Tous droits réservés - <a href="/contact">Coordonnées</a></p>
+          </div>
+        </footer>
+		<!-- JQuery -->
+		<script src="jquery/jquery-2.2.0.min.js"></script>
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>                

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        
+        <title>Eventpass</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+    </head>
+    <body>   
+        <div class="container">                    
+            <header>  
+                <a class="navbar-brand" href="accueil.html">Eventpass</a> 
+                <div class="dropdown">
+                        <ul>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                
+                                <ul class="dropdown-menu">
+                                    <li>Connexion</a></li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </div>                 
+            </header>
+            <section>
+             <div class="modal fade" id="inscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&
+							times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">S'inscrire</h4>
+						   </div>
+						   <div class="modal-body">
+							<form name="" method="post" action ="" class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-3 control-label required" for="name">Nom</label>
+									<div class="col-sm-7">
+										<input type="text id="lastname" name="lastname" required="required" class="form-control"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label required" for="description">Prenom</label>
+									<div class="col-sm-7">
+										<input type="text" id="firstname" name="firstname" required="required" class="form-control"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label required" for="description">Pseudo</label>
+									<div class="col-sm-7">
+										<input type="text" id="nickname" name="nickname" required="required" class="form-control" />
+									</div>
+								</div>
+								<div class="form-group>
+									<label class="col-sm-3 control-label required" for="description">Mot de passe</label>
+									<div class="col-sm-7">
+										<input type="password" id="password" name="password" required="required" class="form-control"/>
+									</div>
+								</div>
+								
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+									
+							
+                <h2 class="text-center">Identifiez-vous</h2>
+                <div class="well">
+                    <form class="form-signin form-horizontal" role="form" action="log.php" method="post">
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                            <input type="text" name="_username" value="" class="form-control" placeholder="Email" required autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <input type="password" name="_password" class="form-control" placeholder="Mot de passe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                                <a href="log.php "><input type="submit" value = " connexion"></a>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Pas encore inscrit ? <a href="testbootstrap.html">Cliquez ici</a>.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="mastfoot">
+          <div class="inner">                       
+              <p>&copy; Eventpass.com - Tous droits réservés - <a href="/contact">Coordonnées</a></p>
+          </div>
+        </footer>
+		<!-- JQuery -->
+		<script src="jquery/jquery-2.2.0.min.js"></script>
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <title>Créer un événement</title>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<form>
+  <div class="form-group">
+    <label for="Inputnom">Nom</label>
+    <input type="nom" class="form-control" id="Inputnom" aria-describedby="nom" placeholder="Enter un nom d'événement">
+    <small id="nom" class="form-text text-muted">Vous devez entrez un nom d'événement valide.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInput">Lieu</label>
+    <input type="lieu" class="form-control" id="Inputlieu" placeholder="Entrez un Lieu">
+  </div>
+   <div class="form-group">
+    <label for="pass1">Type d'événement</label>
+    <select class="form-control" id="pass1">
+      <option>Soirée</option>
+      <option>Déjeuner dansant</option>
+
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="pass1">Type de pass</label>
+    <select class="form-control" id="pass1">
+      <option>Prévente uniquement</option>
+      <option>Vente sur place uniquement</option>
+      <option>Prévente et vente sur place</option>
+      <option>Entrée sur bouteille</option>
+      <option>Entrée gratuite</option>
+    </select>
+  </div>
+  
+ <div class="form-group">
+    <label for="pass2">Prix du pass</label>
+    <select class="form-control" id="pass2">
+      <option>Gratuit</option>
+      <option>5€</option>
+      <option>10€</option>
+      <option>15€</option>
+      <option>20€</option>
+	  <option>25€</option>
+	  <option>30€</option>
+	  <option>35€</option>
+	  <option>40€</option>
+	  <option>45€</option>
+	  <option>50€</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea class="form-control" id="descripevent" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">Insérer un flyer</label>
+    <input type="file" class="form-control-file" id="InputFile" aria-describedby="fileHelp">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Créer</button>
+</form>
